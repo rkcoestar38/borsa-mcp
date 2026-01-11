@@ -1,0 +1,69 @@
+======================================================================
+ÇEYREK/YARIM/TAM ALTIN - KAPALIÇARŞI KAYNAĞI TESTİ
+======================================================================
+
+1. KAPALIÇARŞI - TÜM METAL TİPLERİ:
+   metal_institutions(): ['akbank', 'qnb-finansbank', 'halkbank', 'isbankasi', 'vakifbank', 'yapikredi', 'ziraat-bankasi', 'garanti-bbva', 'sekerbank', 'denizbank', 'hsbc', 'turkiye-finans', 'ziraat-katilim', 'vakif-katilim', 'ing-bank', 'kuveyt-turk', 'albaraka-turk', 'enpara', 'kapalicarsi', 'odaci', 'harem', 'altinkaynak', 'hayat-finans', 'emlak-katilim', 'fibabanka', 'odeabank', 'getirfinans']
+
+2. KAPALIÇARŞI'DAN FARKLI ALTIN TÜRLERİ:
+   gram-altin: Alış=6342.32, Satış=6349.6 [OK]
+   ceyrek-altin: [FAIL] Asset 'ceyrek-altin' not supported for institution
+   yarim-altin: [FAIL] Asset 'yarim-altin' not supported for institution 
+   tam-altin: [FAIL] Asset 'tam-altin' not supported for institution ra
+   cumhuriyet-altini: [FAIL] Asset 'cumhuriyet-altini' not supported for instit
+   ata-altini: [FAIL] Asset 'ata-altini' not supported for institution r
+   resat-altini: [FAIL] Asset 'resat-altini' not supported for institution
+   gram-gumus: [FAIL] Institution 'kapalicarsi' not found for asset 'gra
+   ons-altin: [FAIL] Institution 'kapalicarsi' not found for asset 'ons
+   22-ayar-bilezik: [FAIL] Asset '22-ayar-bilezik' not supported for institut
+   14-ayar-bilezik: [FAIL] Asset '14-ayar-bilezik' not supported for institut
+
+3. TÜM KURUMLAR İÇİN TÜM METALLER (institution_rates):
+   gram-altin kurumları: 36 adet
+
+   Kapalıçarşı gram-altin:
+    institution institution_name       asset      buy    sell  spread
+22  kapalicarsi      Kapalıçarşı  gram-altin  6342.32  6349.6    0.11
+
+4. GÜMÜŞ KURUM FİYATLARI:
+   gram-gumus kurumları: 22 adet
+
+   İlk 3:
+     institution institution_name       asset     buy    sell  spread
+0         akbank           Akbank  gram-gumus  106.42  114.17    7.29
+1  albaraka-turk    Albaraka Türk  gram-gumus  106.46  115.14    8.15
+2    altinkaynak      Altınkaynak  gram-gumus   15.68   17.53   11.79
+
+5. ONS ALTIN KURUM FİYATLARI:
+   ons-altin kurumları: 3 adet
+
+   İlk 3:
+  institution institution_name      asset      buy     sell  spread
+0       harem            Harem  ons-altin  4503.90  4504.53    0.01
+1   vakifbank        Vakıfbank  ons-altin  4469.35  4569.71    2.25
+2       venus            Venüs  ons-altin  4504.11  4504.15    0.00
+
+6. TARİHSEL VERİ - FARKLI METALLER:
+   gram-altin: 21 satır [OK]
+   gram-gumus: 21 satır [OK]
+   ons-altin: 21 satır [OK]
+
+======================================================================
+SONUÇ ve ÖNERİ:
+======================================================================
+
+borsapy DOĞRUDAN çeyrek/yarım/tam altın desteklemiyor.
+Ancak ÇÖZÜM var:
+
+1. GRAM ALTIN fiyatını borsapy'den çek
+2. AŞAĞIDAKİ KATSAYI ile çarp:
+
+   Çeyrek Altın  = Gram × 1.75
+   Yarım Altın   = Gram × 3.50
+   Tam Altın     = Gram × 7.00
+   Cumhuriyet    = Gram × 7.20
+
+3. VEYA canlidoviz.com scraper'ı kullan (mevcut, kesin fiyat verir)
+
+ÖNERİ: Çeyrek/Yarım/Tam için CANLIDOVIZ scraper daha doğru!
+       Gram/Gümüş/Ons için BORSAPY kullanılabilir.

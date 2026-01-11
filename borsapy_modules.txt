@@ -1,0 +1,122 @@
+BORSAPY MODÜLLER VE SINIFLAR
+==================================================
+
+APIError: type
+  Methods/Properties: ['add_note', 'args', 'with_traceback']
+
+AuthenticationError: type
+  Methods/Properties: ['add_note', 'args', 'with_traceback']
+
+Bond: type
+  Methods/Properties: ['MATURITIES', 'change', 'change_pct', 'info', 'maturity', 'name', 'yield_decimal', 'yield_rate']
+
+BorsapyError: type
+  Methods/Properties: ['add_note', 'args', 'with_traceback']
+
+Crypto: type
+  Methods/Properties: ['current', 'history', 'info', 'pair', 'symbol']
+
+DataNotAvailableError: type
+  Methods/Properties: ['add_note', 'args', 'with_traceback']
+
+EconomicCalendar: type
+  Methods/Properties: ['COUNTRIES', 'countries', 'events', 'high_importance', 'this_month', 'this_week', 'today']
+
+FX: type
+  Methods/Properties: ['asset', 'bank_rate', 'bank_rates', 'banks', 'current', 'history', 'info', 'institution_history', 'institution_rate', 'institution_rates']
+
+Fund: type
+  Methods/Properties: ['allocation', 'allocation_history', 'detail', 'fund_code', 'history', 'info', 'performance', 'risk_metrics', 'sharpe_ratio', 'symbol']
+
+Index: type
+  Methods/Properties: ['history', 'info', 'symbol']
+
+Inflation: type
+  Methods/Properties: ['calculate', 'latest', 'tufe', 'ufe']
+
+InvalidIntervalError: type
+  Methods/Properties: ['add_note', 'args', 'with_traceback']
+
+InvalidPeriodError: type
+  Methods/Properties: ['add_note', 'args', 'with_traceback']
+
+RateLimitError: type
+  Methods/Properties: ['add_note', 'args', 'with_traceback']
+
+Screener: type
+  Methods/Properties: ['CRITERIA_DEFAULTS', 'TEMPLATES', 'add_filter', 'clear', 'run', 'set_index', 'set_recommendation', 'set_sector']
+
+Ticker: type
+  Methods/Properties: ['actions', 'analyst_price_targets', 'balance_sheet', 'calendar', 'cashflow', 'dividends', 'earnings_dates', 'fast_info', 'get_news_content', 'history']
+
+TickerNotFoundError: type
+  Methods/Properties: ['add_note', 'args', 'with_traceback']
+
+Tickers: type
+  Methods/Properties: ['history', 'symbols', 'tickers']
+
+VIOP: type
+  Methods/Properties: ['commodity_futures', 'currency_futures', 'futures', 'get_by_symbol', 'index_futures', 'index_options', 'options', 'stock_futures', 'stock_options']
+
+banks: function
+
+bond: module
+
+bonds: function
+
+cache: module
+
+calendar: module
+
+companies: function
+
+compare_funds: function
+
+crypto: module
+
+crypto_pairs: function
+
+download: function
+
+economic_calendar: function
+
+exceptions: module
+
+fund: module
+
+fx: module
+
+index: function
+
+indices: function
+
+inflation: module
+
+market: module
+
+metal_institutions: function
+
+multi: module
+
+risk_free_rate: function
+
+screen_funds: function
+
+screen_stocks: function
+
+screener: module
+
+screener_criteria: function
+
+search_companies: function
+
+search_funds: function
+
+sectors: function
+
+stock_indices: function
+
+ticker: module
+
+viop: module
+

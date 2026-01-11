@@ -1,0 +1,16 @@
+FX.__init__ source:
+======================================================================
+    def __init__(self, asset: str):
+        """
+        Initialize an FX object.
+
+        Args:
+            asset: Asset code (USD, EUR, gram-altin, BRENT, etc.)
+        """
+        self._asset = asset
+        self._provider = get_dovizcom_provider()
+        self._current_cache: dict[str, Any] | None = None
+
+
+======================================================================
+FX._get_current source (if exists):

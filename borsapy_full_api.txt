@@ -1,0 +1,53 @@
+======================================================================
+BORSAPY TAM API REHBERİ
+======================================================================
+
+1. TICKER (BIST Hisse Senetleri)
+--------------------------------------------------
+Methods/Properties: ['actions', 'analyst_price_targets', 'balance_sheet', 'calendar', 'cashflow', 'dividends', 'earnings_dates', 'fast_info', 'get_news_content', 'history', 'income_stmt', 'info', 'isin', 'major_holders', 'news', 'quarterly_balance_sheet', 'quarterly_cashflow', 'quarterly_income_stmt', 'recommendations', 'recommendations_summary', 'splits', 'symbol', 'ttm_cashflow', 'ttm_income_stmt']
+
+2. FUND (TEFAS Fonları)
+--------------------------------------------------
+Methods/Properties: ['allocation', 'allocation_history', 'detail', 'fund_code', 'history', 'info', 'performance', 'risk_metrics', 'sharpe_ratio', 'symbol']
+
+3. FX (Döviz, Altın, Emtia)
+--------------------------------------------------
+Methods/Properties: ['asset', 'bank_rate', 'bank_rates', 'banks', 'current', 'history', 'info', 'institution_history', 'institution_rate', 'institution_rates', 'metal_institutions', 'symbol']
+
+4. CRYPTO (Kripto)
+--------------------------------------------------
+Methods/Properties: ['current', 'history', 'info', 'pair', 'symbol']
+
+5. INDEX (Endeksler)
+--------------------------------------------------
+Methods/Properties: ['history', 'info', 'symbol']
+
+6. INFLATION (Enflasyon)
+--------------------------------------------------
+Methods/Properties: ['calculate', 'latest', 'tufe', 'ufe']
+
+7. SCREENER (Hisse Tarama)
+--------------------------------------------------
+Methods/Properties: ['CRITERIA_DEFAULTS', 'TEMPLATES', 'add_filter', 'clear', 'run', 'set_index', 'set_recommendation', 'set_sector']
+
+8. GLOBAL FONKSİYONLAR
+--------------------------------------------------
+bp.banks()
+bp.bonds()
+bp.companies()
+bp.compare_funds()
+bp.crypto_pairs()
+bp.download()
+bp.economic_calendar()
+bp.index()
+bp.indices()
+bp.metal_institutions()
+bp.risk_free_rate()
+bp.screen_funds()
+bp.screen_stocks()
+bp.search_companies()
+bp.search_funds()
+bp.sectors()
+bp.stock_indices()
+
+======================================================================

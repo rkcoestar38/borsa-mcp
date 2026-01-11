@@ -1,0 +1,71 @@
+======================================================================
+BORSAPY ALTIN KAYNAKLARI - TAM ARASTIRMA
+======================================================================
+
+1. MEVCUT FX METODLARI VE ATTRIBUTELARI:
+   FX class methods: ['asset', 'bank_rate', 'bank_rates', 'banks', 'current', 'history', 'info', 'institution_history', 'institution_rate', 'institution_rates', 'metal_institutions', 'symbol']
+
+2. BP MODÜL FONKSİYONLARI (metal/altin/gold):
+   Tüm bp fonksiyonları: ['APIError', 'AuthenticationError', 'Bond', 'BorsapyError', 'Crypto', 'DataNotAvailableError', 'EconomicCalendar', 'FX', 'Fund', 'Index', 'Inflation', 'InvalidIntervalError', 'InvalidPeriodError', 'RateLimitError', 'Screener', 'Ticker', 'TickerNotFoundError', 'Tickers', 'VIOP', 'banks', 'bond', 'bonds', 'cache', 'calendar', 'companies', 'compare_funds', 'crypto', 'crypto_pairs', 'download', 'economic_calendar', 'exceptions', 'fund', 'fx', 'index', 'indices', 'inflation', 'market', 'metal_institutions', 'multi', 'risk_free_rate', 'screen_funds', 'screen_stocks', 'screener', 'screener_criteria', 'search_companies', 'search_funds', 'sectors', 'stock_indices', 'ticker', 'viop']
+   Altın/Metal ilgili: ['metal_institutions']
+
+3. METAL INSTITUTIONS (Kuyumcu/Banka listesi):
+   Desteklenen metaller: ['akbank', 'qnb-finansbank', 'halkbank', 'isbankasi', 'vakifbank', 'yapikredi', 'ziraat-bankasi', 'garanti-bbva', 'sekerbank', 'denizbank', 'hsbc', 'turkiye-finans', 'ziraat-katilim', 'vakif-katilim', 'ing-bank', 'kuveyt-turk', 'albaraka-turk', 'enpara', 'kapalicarsi', 'odaci', 'harem', 'altinkaynak', 'hayat-finans', 'emlak-katilim', 'fibabanka', 'odeabank', 'getirfinans']
+
+4. GRAM ALTIN - KURUM FİYATLARI (institution_rates):
+   Type: <class 'pandas.core.frame.DataFrame'>
+   İlk 5 kurum:
+       institution institution_name       asset      buy     sell  spread
+0           akbank           Akbank  gram-altin  6005.51  6439.54    7.23
+1    albaraka-turk    Albaraka Türk  gram-altin  6023.82  6440.99    6.93
+2  alternatif-bank  Alternatif Bank  gram-altin  5897.91  6536.99   10.84
+3      altinkaynak      Altınkaynak  gram-altin  6307.86  6440.00    2.09
+4      anadolubank      Anadolubank  gram-altin  5691.78  6713.58   17.95
+
+5. TÜM ALTIN TİPLERİ TEST:
+   gram-altin: 6246.25 TL [OK]
+   ceyrek-altin: [FAIL] Unsupported asset: ceyrek-altin. Supported: ['AUD'
+   yarim-altin: [FAIL] Unsupported asset: yarim-altin. Supported: ['AUD',
+   tam-altin: [FAIL] Unsupported asset: tam-altin. Supported: ['AUD', '
+   cumhuriyet-altini: [FAIL] Unsupported asset: cumhuriyet-altini. Supported: [
+   ata-altin: [FAIL] Unsupported asset: ata-altin. Supported: ['AUD', '
+   resat-altin: [FAIL] Unsupported asset: resat-altin. Supported: ['AUD',
+   gram-gumus: 110.766 TL [OK]
+   ons-altin: 4507.92 TL [OK]
+   22-ayar: [FAIL] Unsupported asset: 22-ayar. Supported: ['AUD', 'BR
+   14-ayar: [FAIL] Unsupported asset: 14-ayar. Supported: ['AUD', 'BR
+   GOLD: [FAIL] Unsupported asset: GOLD. Supported: ['AUD', 'BRENT
+   XAU: [FAIL] Unsupported asset: XAU. Supported: ['AUD', 'BRENT'
+   gold: [FAIL] Unsupported asset: gold. Supported: ['AUD', 'BRENT
+
+6. KAPALIÇARŞI FİYATI (Kuyumcu):
+   Kapalıçarşı: {'institution': 'kapalicarsi', 'institution_name': 'Kapalıçarşı', 'asset': 'gram-altin', 'buy': 6342.32, 'sell': 6349.6, 'spread': 0.11}
+
+7. BANKA ALTIN FİYATLARI:
+   akbank: {'institution': 'akbank', 'institution_name': 'Akbank', 'asset': 'gram-altin', 'buy': 6005.51, 'sell': 6439.54, 'spread': 7.23}
+   garanti: [FAIL] Institution 'garanti' not found for asse
+   isbank: [FAIL] Institution 'isbank' not found for asset
+   ziraat: [FAIL] Institution 'ziraat' not found for asset
+   yapikredi: {'institution': 'yapikredi', 'institution_name': 'Yapıkredi', 'asset': 'gram-altin', 'buy': 6109.97, 'sell': 6377.98, 'spread': 4.39}
+
+8. KURUM TARİHSEL VERİ (institution_history):
+   Kapalıçarşı 5 günlük: 4 satır
+
+                Open      High       Low     Close
+Date                                              
+2026-01-06  6343.534  6361.133  6329.864  6355.325
+2026-01-07  6350.211  6362.608  6331.558  6360.440
+2026-01-08  6337.216  6337.216  6297.526  6301.154
+2026-01-09  6332.884  6351.769  6308.297  6349.601
+
+9. DESTEKLENEN BANKALAR (bp.banks()):
+   ['akbank', 'albaraka', 'alternatifbank', 'altinkaynak', 'anadolubank', 'cepteteb', 'denizbank', 'destekbank', 'dunyakatilim', 'emlakkatilim', 'enpara', 'fibabanka', 'garanti', 'getirfinans', 'hadi', 'halkbank', 'harem', 'hayatfinans', 'hsbc', 'ing', 'isbank', 'kapalicarsi', 'kuveytturk', 'misyonbank', 'odaci', 'odeabank', 'qnb', 'sekerbank', 'tcmb', 'turkiyefinans', 'vakifbank', 'vakifkatilim', 'venus', 'yapikredi', 'ziraat', 'ziraatkatilim']
+
+10. ÇEYREK ALTIN ALTERNATİF YOLLAR:
+   Gram fiyat: 6246.25 TL
+   Çeyrek (hesaplanan, 1.75g): 10930.94 TL
+   NOT: Bu tahmini fiyattır, kuyumcu spread'i dahil değil!
+
+======================================================================
+ARASTIRMA TAMAMLANDI
+======================================================================

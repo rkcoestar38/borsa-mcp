@@ -1,0 +1,39 @@
+1. TEFAS FONU (TCD):
+   Fon Adi: TACİRLER PORTFÖY DEĞIŞKEN FON
+   Son Fiyat: 38.987213
+   [OK] TEFAS
+
+2. ALTIN (gram-altin):
+   Current Dict: {'symbol': 'gram-altin', 'last': 6246.25, 'open': 0.0, 'high': 0.0, 'low': 0.0, 'update_time': datetime.datetime(2026, 1, 9, 23, 44, 57)}
+   [OK] ALTIN
+
+3. DESTEKLENEN FX VARLIKLARI:
+   USD current: {'symbol': 'USD', 'last': 43.1297, 'open': 0.0, 'high': 0.0, 'low': 0.0, 'update_time': datetime.datetime(2026, 1, 9, 23, 59, 53)}
+   [OK] FX BASIC WORKS
+
+4. BIST HISSE (THYAO):
+   fast_info type: <class 'borsapy.ticker.FastInfo'>
+   fast_info attrs: ['keys', 'todict']
+   Son Fiyat: 291.5 TL
+   [OK] BIST
+
+5. TARIHSEL FON (TCD, son 1 hafta):
+   Satir Sayisi: 20
+   Kolonlar: ['Price', 'FundSize', 'Investors']
+   Ilk: 2025-12-12 03:00:00, Son: 2026-01-09 03:00:00
+   Ornek Fiyat: {'Price': 38.987213, 'FundSize': 1267007063.34, 'Investors': 13390.0}
+   [OK] TARIHSEL FON
+
+6. TARIHSEL ALTIN (gram-altin):
+   Satir Sayisi: 21
+   Kolonlar: ['Open', 'High', 'Low', 'Close']
+   [OK] TARIHSEL ALTIN
+
+7. BIST ETF (GMSTR):
+   [FAIL] API Error: Failed to fetch quote for GMSTR: Expecting value: line 1 column 1 (ch
+
+8. FON BELIRLI TARIH (TCD, 2026-01-09):
+   Satir Sayisi: 2
+   2026-01-08 03:00:00: {'Price': 38.718841, 'FundSize': 1258942782.1, 'Investors': 13397.0}
+   2026-01-09 03:00:00: {'Price': 38.987213, 'FundSize': 1267007063.34, 'Investors': 13390.0}
+   [OK] BELIRLI TARIH
